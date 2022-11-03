@@ -6,7 +6,7 @@ import * as fastify from 'fastify';
 import * as moment from 'moment';
 
 import router from "./router";
-import cronjob from './nodecron';
+// import cronjob from './nodecron';
 
 const serveStatic = require('serve-static');
 var crypto = require('crypto');
@@ -174,7 +174,7 @@ app.decorate("serviceMonitoring", async (request, reply) => {
   console.log(moment().locale('th').format('HH:mm:ss'), request.raw.url);
 });
 
-app.register(cronjob);
+// app.register(cronjob);
 
 const port = +process.env.PORT || 3001;
 const host = '0.0.0.0';

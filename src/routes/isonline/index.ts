@@ -67,7 +67,7 @@ const router = (fastify, { }, next) => {
 
   })
 
-  fastify.post('/get-libs', { preHandler: [fastify.authenticate] }, async (req: fastify.Request, res: fastify.Reply) => {
+  fastify.post('/get-libs', {}, async (req: fastify.Request, res: fastify.Reply) => {
     let groupCode: string = req.body.groupCode;
     let hospCode: string = req.body.hospCode;
     let tokenKey = req.body.tokenKey;
