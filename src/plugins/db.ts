@@ -1,5 +1,7 @@
 import knex from 'knex';
-
+import * as oracledb from 'oracledb';
+// Enable Thick mode For
+oracledb.initOracleClient({ libDir: 'C:\\instantclient_18_5' });
 var timezone = 'Asia/Bangkok';
 var options = {
   HIS: {
@@ -68,7 +70,7 @@ const dbConnection = (type = 'HIS') => {
         }
       }
     };
-  } if (config.client == 'oracledb') {
+  } else if (config.client == 'oracledb') {
     opt = {
       client: config.client,
       caseSensitive: false,
@@ -78,10 +80,11 @@ const dbConnection = (type = 'HIS') => {
         password: connection.password,
         port: +connection.port,
         externalAuth: false,
-        fetchAsString: ['DATE'],
-      }
+        fetchAsString: ['DATE','CLOB'],
+        acquireConnectionTimeout: 5000,
+      },
     };
-  } if (config.client == 'pg') {
+  }else  if (config.client == 'pg') {
     opt = {
       client: config.client,
       connection: {
