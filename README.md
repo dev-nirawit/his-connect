@@ -29,17 +29,15 @@
 - อ.สถิตย์ เรียนพิศ https://github.com/siteslave
 ```
 
-# FIX สำหรับ Oracle 10g On Windows 10 , 11
+# FIX สำหรับ Oracle On Windows 10 , 11
 - ตรวจสอบ Supported Oracle Database Versions
   https://node-oracledb.readthedocs.io/en/latest/user_guide/installation.html
   
-- download 
+- download https://www.oracle.com/database/technologies/instant-client/winx64-64-downloads.html
 
-    1.https://download.oracle.com/otn/nt/instantclient/185000/instantclient-basic-windows.x64-18.5.0.0.0dbru.zip
+- ติดตั้ง instantclient ไว้ที่ไหนก็ได้
+  
+- ตั้งค่า system Environment Variables
 
-    2.https://download.oracle.com/otn/nt/instantclient/185000/instantclient-sdk-windows.x64-18.5.0.0.0dbru.zip
-
-- ติดตั้ง instantclient + sdk  Version 18.5.0.0.0
-
-***** ดูตัวอย่างการตั้งค่าได้ที่ https://medium.com/pnpsolution/%E0%B8%A7%E0%B8%B4%E0%B8%98%E0%B8%B5%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%80%E0%B8%8A%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%A1%E0%B8%95%E0%B9%88%E0%B8%AD-node-%E0%B8%81%E0%B8%B1%E0%B8%9A-database-oracle-22a8dcd4af9a
+![image](https://github.com/dev-nirawit/his-connect/assets/104845560/05491030-f202-4f9d-8dec-f7c43d9e3a05)
 
