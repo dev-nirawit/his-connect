@@ -30,6 +30,9 @@
 ```
 
 # FIX สำหรับ Oracle 10g On Windows 10 , 11
+- ตรวจสอบ Supported Oracle Database Versions
+  https://node-oracledb.readthedocs.io/en/latest/user_guide/installation.html
+  
 - download 
 
     1.https://download.oracle.com/otn/nt/instantclient/185000/instantclient-basic-windows.x64-18.5.0.0.0dbru.zip
